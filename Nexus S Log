@@ -1,0 +1,88 @@
+
+
+
+     *****      With the wifi off.      *****
+
+07.203 ﹕ enabling wifi.
+07.343 ﹕ addNetwork(Asus_config) failed.
+07.496 ﹕ addNetwork(Asus_config) failed.
+07.699 ﹕ addNetwork(Asus_config) failed.
+07.757 ﹕ addNetwork(Asus_config) failed.
+07.824 ﹕ addNetwork(Asus_config) failed.
+07.875 ﹕ addNetwork(Asus_config) failed.
+07.925 ﹕ addNetwork(Asus_config) failed.
+07.976 ﹕ addNetwork(Asus_config) failed.
+08.035 ﹕ addNetwork(Asus_config) failed.
+08.086 ﹕ addNetwork(Asus_config) failed.
+08.140 ﹕ addNetwork(Asus_config) failed.
+08.195 ﹕ addNetwork(Asus_config) failed.
+08.246 ﹕ addNetwork(Asus_config) failed.
+08.300 ﹕ addNetwork(Asus_config) failed.
+08.359 ﹕ addNetwork(Asus_config) failed.
+08.425 ﹕ addNetwork(Asus_config) failed.
+08.500 ﹕ addNetwork(Asus_config) failed.
+08.558 ﹕ addNetwork(Asus_config) failed.
+08.609 ﹕ addNetwork(Asus_config) failed.
+08.664 ﹕ addNetwork(Asus_config) failed.
+08.761 ﹕ addNetwork(Asus_config) failed.
+09.285 ﹕ addNetwork(Asus_config) succeeded.
+09.289 ﹕ >>>>> onResume called
+09.293 ﹕ connection attempts: 1
+09.293 ﹕ connectToNetwork()
+09.355 ﹕ -----android.net.wifi.supplicant.STATE_CHANGE-----
+09.355 ﹕ -    newState : DISCONNECTED
+09.359 ﹕ connection attempts: 2
+09.359 ﹕ connectToNetwork()
+09.433 ﹕ Reconnecting
+09.437 ﹕ -----android.net.wifi.supplicant.STATE_CHANGE-----
+09.437 ﹕ -    newState : SCANNING
+09.441 ﹕ connection attempts: 3
+09.441 ﹕ connectToNetwork()
+09.507 ﹕ Reconnecting
+09.511 ﹕ -----android.net.wifi.SCAN_RESULTS-----
+09.515 ﹕ -----android.net.wifi.supplicant.STATE_CHANGE-----
+09.515 ﹕ -    newState : SCANNING
+09.515 ﹕ -----android.net.wifi.supplicant.STATE_CHANGE-----
+09.515 ﹕ -    newState : ASSOCIATING
+10.218 ﹕ -----android.net.wifi.supplicant.STATE_CHANGE-----
+10.222 ﹕ -    newState : ASSOCIATED
+10.222 ﹕ -----android.net.wifi.supplicant.STATE_CHANGE-----
+10.230 ﹕ -    newState : FOUR_WAY_HANDSHAKE
+10.230 ﹕ -----android.net.wifi.SCAN_RESULTS-----
+10.234 ﹕ -----android.net.wifi.supplicant.STATE_CHANGE-----
+10.238 ﹕ -    newState : DISCONNECTED
+10.238 ﹕ -----android.net.wifi.supplicant.STATE_CHANGE-----
+10.242 ﹕ -    newState : SCANNING
+10.242 ﹕ -----android.net.wifi.supplicant.STATE_CHANGE-----
+10.254 ﹕ -    newState : ASSOCIATING
+10.254 ﹕ -----android.net.wifi.supplicant.STATE_CHANGE-----
+10.254 ﹕ -    newState : DISCONNECTED
+10.254 ﹕ -----android.net.wifi.supplicant.STATE_CHANGE-----
+10.257 ﹕ -    newState : SCANNING
+10.265 ﹕ -----android.net.wifi.supplicant.STATE_CHANGE-----
+10.269 ﹕ -    newState : DISCONNECTED
+10.425 ﹕ -----android.net.wifi.supplicant.STATE_CHANGE-----
+10.429 ﹕ -    newState : FOUR_WAY_HANDSHAKE
+10.433 ﹕ -----android.net.wifi.supplicant.STATE_CHANGE-----
+10.437 ﹕ -    newState : GROUP_HANDSHAKE
+10.472 ﹕ -----android.net.wifi.supplicant.STATE_CHANGE-----
+10.476 ﹕ -    newState : COMPLETED
+10.527 ﹕ >>>>> bssid: bc:ae:c5:c4:7a:99
+10.535 ﹕ >>>>> Connected to the network. This is the endpoint, yay!
+17.132 ﹕ >>>>> onPause called
+17.211 ﹕ >>>>> onResume called
+17.218 ﹕ connection attempts: 4
+17.218 ﹕ connectToNetwork()
+17.218 ﹕ Already connected to the target router
+17.328 ﹕ -----android.net.wifi.supplicant.STATE_CHANGE-----
+17.328 ﹕ -    newState : COMPLETED
+17.379 ﹕ >>>>> bssid: bc:ae:c5:c4:7a:99
+17.379 ﹕ >>>>> Connected to the network. This is the endpoint, yay!
+
+
+
+
+     *****      The wifi is manually turned off then on again       *****
+
+
+     *****      With the Access Point not initially accessible.      ******

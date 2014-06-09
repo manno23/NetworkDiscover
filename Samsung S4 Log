@@ -1,0 +1,143 @@
+NOTE:   The Samsung S4 has the built in feature that disconnects from a network if it provides no
+        internet connection. It is in the wifi options -> advanced -> Auto Network Switch option.
+        This must be turned off to remain on your selected Access Point.
+
+
+     *****      With the wifi off.      *****
+
+05-11 00:14:00.669 ﹕ enabling wifi.
+05-11 00:14:00.694 ﹕ addNetwork(Asus_config) failed.
+05-11 00:14:01.699 ﹕ addNetwork(Asus_config) failed.
+05-11 00:14:01.749 ﹕ addNetwork(Asus_config) failed.
+05-11 00:14:01.804 ﹕ addNetwork(Asus_config) failed.
+05-11 00:14:01.854 ﹕ addNetwork(Asus_config) failed.
+05-11 00:14:01.904 ﹕ addNetwork(Asus_config) failed.
+05-11 00:14:01.959 ﹕ addNetwork(Asus_config) failed.
+05-11 00:14:02.009 ﹕ addNetwork(Asus_config) failed.
+05-11 00:14:02.059 ﹕ addNetwork(Asus_config) failed.
+05-11 00:14:02.114 ﹕ addNetwork(Asus_config) failed.
+05-11 00:14:02.164 ﹕ addNetwork(Asus_config) failed.
+05-11 00:14:02.649 ﹕ addNetwork(Asus_config) succeeded.
+05-11 00:14:02.649 ﹕ >>>>> onResume called
+05-11 00:14:02.649 ﹕ connection attempts: 1
+05-11 00:14:02.649 ﹕ connectToNetwork()
+05-11 00:14:02.674 ﹕ -----android.net.wifi.supplicant.STATE_CHANGE-----
+05-11 00:14:02.674 ﹕ -    newState : DISCONNECTED
+05-11 00:14:02.849 ﹕ -----android.net.wifi.supplicant.STATE_CHANGE-----
+05-11 00:14:02.849 ﹕ -    newState : DISCONNECTED
+05-11 00:14:02.849 ﹕ -----android.net.wifi.supplicant.STATE_CHANGE-----
+05-11 00:14:02.849 ﹕ -    newState : SCANNING
+05-11 00:14:03.389 ﹕ -----android.net.wifi.supplicant.STATE_CHANGE-----
+05-11 00:14:03.389 ﹕ -    newState : ASSOCIATING
+05-11 00:14:03.394 ﹕ -----android.net.wifi.supplicant.STATE_CHANGE-----
+05-11 00:14:03.394 ﹕ -    newState : ASSOCIATED
+05-11 00:14:03.394 ﹕ -----android.net.wifi.supplicant.STATE_CHANGE-----
+05-11 00:14:03.394 ﹕ -    newState : FOUR_WAY_HANDSHAKE
+05-11 00:14:03.409 ﹕ -----android.net.wifi.supplicant.STATE_CHANGE-----
+05-11 00:14:03.409 ﹕ -    newState : GROUP_HANDSHAKE
+05-11 00:14:03.434 ﹕ -----android.net.wifi.supplicant.STATE_CHANGE-----
+05-11 00:14:03.434 ﹕ -    newState : COMPLETED
+05-11 00:14:03.514 ﹕ >>>>> bssid: bc:ae:c5:c4:7a:99
+05-11 00:14:03.519 ﹕ >>>>> Connected to the network. This is the endpoint, yay!
+
+NOTE: I don't know why an onPause is called here, the calls are idempotent
+      in terms of connecting so it does not really matter.
+
+05-11 00:14:05.164 ﹕ >>>>> onPause called
+05-11 00:14:05.314 ﹕ >>>>> onResume called
+05-11 00:14:05.324 ﹕ connection attempts: 2
+05-11 00:14:05.324 ﹕ connectToNetwork()
+05-11 00:14:05.329 ﹕ Already connected to the target router
+05-11 00:14:05.339 ﹕ -----android.net.wifi.supplicant.STATE_CHANGE-----
+05-11 00:14:05.344 ﹕ -    newState : COMPLETED
+05-11 00:14:05.394 ﹕ >>>>> bssid: bc:ae:c5:c4:7a:99
+05-11 00:14:05.394 ﹕ >>>>> Connected to the network. This is the endpoint, yay!
+
+
+
+
+     *****      The wifi is manually turned off then on again       *****
+
+Turned OFF
+05-11 00:18:13.109 ﹕ -----android.net.wifi.supplicant.STATE_CHANGE-----
+05-11 00:18:13.109 ﹕ -    newState : DISCONNECTED
+05-11 00:18:13.139 ﹕ -----android.net.wifi.supplicant.CONNECTION_CHANGE-----
+05-11 00:18:13.139 ﹕ -    connected : false
+Turned ON
+05-11 00:18:36.049 ﹕ -----android.net.wifi.supplicant.CONNECTION_CHANGE-----
+05-11 00:18:36.049 ﹕ -    connected : true
+05-11 00:18:36.134 ﹕ -----android.net.wifi.supplicant.STATE_CHANGE-----
+05-11 00:18:36.134 ﹕ -    newState : DISCONNECTED
+05-11 00:18:36.149 ﹕ -----android.net.wifi.supplicant.STATE_CHANGE-----
+05-11 00:18:36.149 ﹕ -    newState : SCANNING
+05-11 00:18:36.734 ﹕ -----android.net.wifi.supplicant.STATE_CHANGE-----
+05-11 00:18:36.734 ﹕ -    newState : ASSOCIATING
+05-11 00:18:36.739 ﹕ -----android.net.wifi.supplicant.STATE_CHANGE-----
+05-11 00:18:36.739 ﹕ -    newState : ASSOCIATED
+05-11 00:18:36.744 ﹕ -----android.net.wifi.supplicant.STATE_CHANGE-----
+05-11 00:18:36.744 ﹕ -    newState : FOUR_WAY_HANDSHAKE
+05-11 00:18:36.784 ﹕ -----android.net.wifi.supplicant.STATE_CHANGE-----
+05-11 00:18:36.784 ﹕ -    newState : GROUP_HANDSHAKE
+05-11 00:18:36.884 ﹕ -----android.net.wifi.supplicant.STATE_CHANGE-----
+05-11 00:18:36.884 ﹕ -    newState : COMPLETED
+05-11 00:18:36.934 ﹕ >>>>> bssid: bc:ae:c5:c4:7a:99
+05-11 00:18:36.934 ﹕ >>>>> Connected to the network. This is the endpoint, yay!
+
+
+
+
+     *****      With the Access Point not initially accessible.      ******
+
+05-11 00:46:18.194 ﹕ connection attempts: 17
+05-11 00:46:18.194 ﹕ connectToNetwork()
+05-11 00:46:18.274 ﹕ Did not find our target router
+05-11 00:46:22.114 ﹕ -----android.net.wifi.SCAN_RESULTS-----
+05-11 00:46:22.119 ﹕ connection attempts: 18
+05-11 00:46:22.119 ﹕ connectToNetwork()
+05-11 00:46:22.314 ﹕ Reconnecting
+05-11 00:46:22.354 ﹕ -----android.net.wifi.supplicant.STATE_CHANGE-----
+05-11 00:46:22.354 ﹕ -    newState : DISCONNECTED
+05-11 00:46:22.354 ﹕ connection attempts: 19
+05-11 00:46:22.354 ﹕ connectToNetwork()
+05-11 00:46:22.524 ﹕ Reconnecting
+05-11 00:46:22.524 ﹕ -----android.net.wifi.supplicant.STATE_CHANGE-----
+05-11 00:46:22.524 ﹕ -    newState : ASSOCIATING
+05-11 00:46:22.524 ﹕ -----android.net.wifi.supplicant.STATE_CHANGE-----
+05-11 00:46:22.524 ﹕ -    newState : ASSOCIATED
+05-11 00:46:22.524 ﹕ -----android.net.wifi.supplicant.STATE_CHANGE-----
+05-11 00:46:22.524 ﹕ -    newState : FOUR_WAY_HANDSHAKE
+05-11 00:46:22.529 ﹕ -----android.net.wifi.supplicant.STATE_CHANGE-----
+05-11 00:46:22.529 ﹕ -    newState : GROUP_HANDSHAKE
+05-11 00:46:22.529 ﹕ -----android.net.wifi.supplicant.STATE_CHANGE-----
+05-11 00:46:22.529 ﹕ -    newState : COMPLETED
+05-11 00:46:22.584 ﹕ >>>>> bssid: bc:ae:c5:c4:7a:99
+05-11 00:46:22.599 ﹕ >>>>> Connected to the network. This is the endpoint, yay!
+05-11 00:46:22.599 ﹕ connection attempts: 20
+05-11 00:46:22.599 ﹕ connectToNetwork()
+05-11 00:46:22.684 ﹕ Reconnecting
+05-11 00:46:22.684 ﹕ -----android.net.wifi.supplicant.STATE_CHANGE-----
+05-11 00:46:22.684 ﹕ -    newState : DISCONNECTED
+05-11 00:46:22.684 ﹕ connection attempts: 21
+05-11 00:46:22.689 ﹕ connectToNetwork()
+05-11 00:46:22.829 ﹕ Reconnecting
+05-11 00:46:22.829 ﹕ -----android.net.wifi.supplicant.STATE_CHANGE-----
+05-11 00:46:22.829 ﹕ -    newState : ASSOCIATING
+05-11 00:46:22.829 ﹕ connection attempts: 22
+05-11 00:46:22.829 ﹕ connectToNetwork()
+05-11 00:46:23.409 ﹕ Reconnecting
+05-11 00:46:23.409 ﹕ -----android.net.wifi.supplicant.STATE_CHANGE-----
+05-11 00:46:23.409 ﹕ -    newState : ASSOCIATED
+05-11 00:46:23.414 ﹕ -----android.net.wifi.supplicant.STATE_CHANGE-----
+05-11 00:46:23.414 ﹕ -    newState : DISCONNECTED
+05-11 00:46:23.414 ﹕ >>>>> onPause called
+05-11 00:46:27.044 ﹕ >>>>> onResume called
+05-11 00:46:27.044 ﹕ connection attempts: 23
+05-11 00:46:27.044 ﹕ connectToNetwork()
+05-11 00:46:27.044 ﹕ Already connected to the target router
+05-11 00:46:27.059 ﹕ -----android.net.wifi.supplicant.STATE_CHANGE-----
+05-11 00:46:27.064 ﹕ -    newState : COMPLETED
+05-11 00:46:27.114 ﹕ >>>>> bssid: bc:ae:c5:c4:7a:99
+05-11 00:46:27.114 ﹕ >>>>> Connected to the network. This is the endpoint, yay!
+
+
+

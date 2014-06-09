@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Network AutoConnect</string>
+    <string name="shared_key">Shared Key</string>
+    <string name="target_ssid">Target SSID</string>
+    <string name="ssid_input_prompt">Target AP</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+</resources>
